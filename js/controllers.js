@@ -137,6 +137,13 @@ myApp.controller('Touch1Controller', function($scope, $stateParams, $cordovaMedi
 		});
 
     }
+    $scope.reset = function() {
+       // Example with 2 arguments
+        console.log("copy");
+        console.log($scope.demo);
+       angular.copy("hiiiii");
+        console.log("copy1");
+     }
       $scope.nextCanvas=function(){
           
           $stateParams.listId=(Number($stateParams.listId))+1;
@@ -211,6 +218,7 @@ myApp.controller('TouchController', function($scope, $stateParams, $cordovaMedia
 		});
 
     }
+    
       $scope.nextCanvas=function(){
           
           $stateParams.listId=(Number($stateParams.listId))+1;
