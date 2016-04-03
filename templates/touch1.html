@@ -18,7 +18,8 @@
             <button ngclipboard data-clipboard-text={{demo}}>
     Copy to clipboard
 </button>
-             <button ng-click="reset()">RESET</button>
+             <button><a facebook class="facebookShare" data-url='http://google.com' data-shares='shares'>{{ demo }}</a>fb</button>
+             
              <a class='button button-assertive icon-right' ngclipboard data-clipboard-text={{demo}}>Copy</a>
              <!-- <a class='button button-balanced icon-right ion-android-volume-up' ng-click='soundCanvas()'>Sound</a>-->
               <a class='button icon-right ion-chevron-right button-clear' ng-click='nextCanvas()'>Next</a>

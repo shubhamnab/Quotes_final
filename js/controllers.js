@@ -1,8 +1,14 @@
-var myApp=angular.module('starter.controllers', ['ngCordova','ngclipboard'])
+var myApp=angular.module('starter.controllers', ['ngCordova','ngclipboard','djds4rce.angular-socialshare'])
 myApp.factory('Data',function(){
     return{
         id:''
     };
+});
+
+
+
+myApp.run(function($FB){
+  $FB.init('166096837109790');
 });
 
 myApp.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
